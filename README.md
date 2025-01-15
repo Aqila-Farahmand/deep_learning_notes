@@ -12,7 +12,9 @@
        σ = √∑(x-mean)^2/n-1
        mean = sum/n
 
-### Note: When to use SoftMax Function as cost function?
+#### Note
+
+### When to use SoftMax Function as cost function?
 1. It's used as activation function in multi-class classification ptoblem.
 
 ### Make sure the Gradient Decent is working:
