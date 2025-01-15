@@ -27,3 +27,11 @@ if too large may never converge (i.e overshooting) and if too small, then conver
 To fix, small very small and check how the j(w,b) is changing.
 i.e j(w,b) should decrease on every iteration.
 if with J(w,b) does not decrease on very small α then there should be a bug in the code.
+
+### Feature Engineering
+To better improve the model learning, using your intuition, desing a new feature by either transforming or combining the exciting feature is called feature engineering.
+Consider the follwoing example:
+the model is to predict the price of the house, and our dataset has features, x1 = length, x2 = width.
+to help model learn and predict better we add a new feature x3 = x1*x2 ( the area).ù
+### Polynomial regression
+
