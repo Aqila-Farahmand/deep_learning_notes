@@ -38,17 +38,37 @@ Feature Engineering:
      the model is to predict the price of the house, and our dataset has features, x1 = length, x2 = width.
      to help model learn and predict better we add a new feature x3 = x1*x2 ( the area).ù
 Polynomial regression:
-     Example: j(w,b) = w*x^2 + w*x + b or x^3
+     Having more than one features.i.e x1 and x2 and the learning function is no longer a stright line.
+     1. j(w,b) = w1*x1^2 + w2*x2 + b
+     2. circle, j(w,b) = w1.x1^2 * w2.x2^2 + b 
+     3. cube (x^3) or any surface that fits the model.
 
 ## Classification 
-     Logistic Resgression
+     Classification with Logistic Resgression:
           Sigmoid function:
           g(z) = 1/(1 + exp^(-z))
-     Logistic Regression:
+     Logistic Regression (Sigmoid)
           note: Dot product i.e vector multiplications.
           considering w and x are vectors or array or many dimension, that is 1D, 2D or 3D etc.
           j(w.x + b) = 1/(1 + exp^(-w.x + b)) or P(y=1|x:w,b) that is the probability of y/output being 1, when x/input is input and w,b are parameters.
      Decision Boundary:
+          linear (w.x +b)
+          Non-linear (circle, cube and etc) or polynomial
+          Or even more complex decision boundry.
+     Cost Function for Logistic Regression:
+          y = 1 or y = 0
+          x = [x1, x2, ... xm]
+          thus:
+          J(w,b) = ∑(i=1 to m​) -yi*​log(f​w,b(xi​)) - (1−yi​)*log(1−fw,b​(xi​))
+          i.e
+          if y = 1;
+          j(w,b) = -log (f(xi)
+
+          if y = 0;
+          j(w,b) = -log(1-f(xi))
+          
+          
+     
           
 
 
