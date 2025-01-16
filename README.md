@@ -1,8 +1,14 @@
 # Deep Learning
-1. Regression model
-2. Cost function (Mean Square Error)
-3. Optimization algorithm (Gradient Decent)
-4. Feature Scalling Methods:
+Supervised Machine Learning 
+     1.Regression
+     2.Classification
+Unsupervised Machine Learning:
+     1.Clustering
+     
+## Regression (Linear Regration)
+      Cost function (Mean Square Error)
+      Optimization algorithm (Gradient Decent)
+### Feature Scalling Methods:
      When the dataset feature has larg range such as i.e feature1 = 1000 - 2000, we need to use feature scalling methods to speed up the Gradient Decent algorithm.
     1. Mean Normalization:
          formula: x'= x1-mean/max-min
@@ -11,8 +17,6 @@
        where σ is standard deviation
        σ = √∑(x-mean)^2/n-1
        mean = sum/n
-
-#### Note
 
 ### When to use SoftMax Function as cost function?
 1. It's used as activation function in multi-class classification ptoblem.
@@ -34,4 +38,17 @@ Consider the follwoing example:
 the model is to predict the price of the house, and our dataset has features, x1 = length, x2 = width.
 to help model learn and predict better we add a new feature x3 = x1*x2 ( the area).ù
 ### Polynomial regression
+Example: j(w,b) = w*x^2 + w*x + b or x^3
+
+## Classification 
+     Logistic Resgression
+          Sigmoid function:
+          g(z) = 1/(1 + exp^(-z))
+     Logistic Regression:
+          note: Dot product i.e vector multiplications.
+          considering w and x are vectors or array or many dimension, that is 1D, 2D or 3D etc.
+          j(w.x + b) = 1/(1 + exp^(-w.x + b)) or P(y=1|x:w,b) that is the probability of y/output being 1, when x/input is input and w,b are parameters.
+     Decision Boundary:
+          
+
 
